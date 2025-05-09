@@ -1,7 +1,7 @@
 # demo-python
 
 This folder contains the source code and configuration used in my blog:  
-**_"Insert blog link here"_**
+https://daksh-jain00.medium.com/auto-instrument-python-app-without-collector-489dc76d9f18
 
 
 ## 📁 Project Structure
