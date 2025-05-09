@@ -17,8 +17,8 @@ $ pip3 list
 $ opentelemetry-instrument --help
 
 # instrument flask app && send ONLY metrics on console
-$ opentelemetry-instrument --traces_exporter none \
---metrics_exporter console --logs_exporter none \
+$ opentelemetry-instrument --metrics_exporter console \
+ --traces_exporter none --logs_exporter none \
 flask run -h 0.0.0.0 -p 3000
 
 # instrument flask app && send ONLY traces on console
@@ -28,8 +28,8 @@ flask run -h 0.0.0.0 -p 3000
 
 # instrument flask app && send ONLY logs on console
 $ export OTEL_PYTHON_LOGGING_AUTO_INSTRUMENTATION_ENABLED=true
-$ opentelemetry-instrument --traces_exporter none \
---metrics_exporter none --logs_exporter console \
+$ opentelemetry-instrument --logs_exporter console \
+--metrics_exporter none --traces_exporter none \
 flask run -h 0.0.0.0 -p 3000
 ```
 ### Containerization of flask app
